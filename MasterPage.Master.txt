@@ -1,0 +1,337 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="OnlineSellingProject.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<title></title>
+<asp:ContentPlaceHolder ID="head" runat="server">
+</asp:ContentPlaceHolder>
+<style type="text/css"> #main
+{
+border-style: outset; border-color: #FF00FF; padding-top: 10px; padding-left: 50px; padding-bottom: 10px;
+background-color: #FFFFFF; margin-left: auto;
+margin-right: auto; height: auto; width: 1150px; color: #FFFF00; position: static;
+background-color: Purple;
+}
+
+.style2
+{
+text-align: center;
+}
+
+
+.style8
+{
+width: 100%; height: 61px; font-size: large; color: #CC0000;
+margin-right: 0px;
+}
+
+
+.style10
+{
+font-size: small;
+}
+.style11
+{
+width: 643px;
+font-size: xx-small; height: 24px;
+}
+.style12
+ 
+{
+width: 643px;
+font-family: "High Tower Text";
+}
+
+.style14
+{
+width: 100px;
+}
+
+.style15
+{
+width: 100%; height: 180px; color: #CC66FF;
+}
+
+.style16
+{
+width: 103px;
+text-align: center; height: 110px;
+}
+
+.style17
+{
+width: 883px;
+}
+
+.style18
+{
+width: 883px;
+font-size: x-large; color: #0066FF;
+font-family: "Baskerville Old Face"; height: 110px;
+text-align: center;
+}
+.style19
+{
+width: 103px;
+text-align: justify; font-size: medium; color: #333300;
+font-family: Andalus;
+}
+
+.style20
+{
+width: 810px; height: 110px;
+}
+.style21
+{
+height: 110px;
+}
+
+
+.style23
+{
+text-align: right; height: 24px;
+ 
+}
+.style28
+{
+height: 64px;
+}
+
+.style30
+{
+font-family: "Brush Script MT"; color: #66FF33;
+font-size: x-large;
+}
+.style31
+{
+font-size: x-large;
+}
+
+
+
+#banner
+{
+width: 1100px; height: 200px; margin-bottom: 20px;
+background-image: url(images/banner.jpg);
+}
+
+
+#textboxdiv
+{
+height: 65px; width: 1100px;
+background-color: Red; text-align: center; padding-top: 10px; margin-bottom: 10px;
+}
+
+
+
+#pagecontent
+{
+height: auto; width: 1100px;
+text-align: center; margin-top: 10px; margin-bottom: 10px; position: static;
+}
+
+
+
+
+#menu
+{
+background-color: Black; height: auto;
+width: 1100px; margin-top: 2px; text-align: center;
+}
+ 
+#menu a:hover
+{
+background-color: Maroon;
+}
+
+
+#footer
+{
+background-color: Lime; width: 1100px;
+}
+
+
+#maindiv
+{
+margin: auto;
+background-color: transparent; width: auto;
+height: 500px; margin-left: auto; margin-right: auto;
+}
+
+#logindiv
+{
+ 
+
+
+
+
+
+}
+</style>
+</head>
+ 
+margin: auto; background-color: Aqua; width: auto;
+height: 400px; padding: 250px;
+ 
+<body style="margin: 10px 50px 10px 50px;">
+<form id="form1" runat="server">
+<div id="main">
+<div id="banner" class="style2" style="background-color: #FF00FF; background- image: inherit;
+height: 203px;">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n bsp;&nbsp;&nbsp;&nbsp;
+<table class="style15">
+<tr>
+<td class="style16">
+<asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/companylogo.jpg"
+Height="98px" OnClick="ImageButton1_Click" Width="138px"
+ 
+CssClass="style31" />
+ 
+
+<br class="style31" />
+<span class="style30">onlineAd.in</span>
+ 
+</td>
+<td class="style18">
+India&#39;s Largest MarketPlace
+</td>
+<td style="text-align: right" class="style20">
+ 
+<asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/images/loginLogo.jpg"
+Height="35px" OnClick="ImageButton2_Click" Width="105px"
+/>
+</td>
+<td class="style21">
+<asp:ImageButton ID="ImageButton3" runat="server"
+ImageUrl="~/images/AddPost.jpg"
+Height="34px" OnClick="ImageButton3_Click" Width="118px"
+/>
+</td>
+</tr>
+<tr>
+<td class="style19"> &nbsp;
+</td>
+<td class="style17" colspan="2">
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+</table>
+</div>
+
+<div id="menu">
+<table class="style8">
+<tr>
+<td class="style14">
+<b><a	href="HomePage.aspx" target="_self">Home</a></b>&nbsp;
+</td>	
+<td>	
+<b><a	href="#" target="_self">About</a></b>&nbsp;
+</td>	
+<td>	
+<b><a	href="#" target="_self">Service</a></b>&nbsp;
+</td>	
+<td>	
+<b><a	href="#" target="_self">Contact Us</a></b>
+</td>	
+</tr>	
+</table>	
+</div>	
+
+<div id="pagecontent">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+</div>
+
+<div id="footer">
+<table class="style8">
+<tr>
+<td class="style12">
+You are shopping in the best site
+ 
+</td>
+<td>
+&nbsp;
+</td>
+<td class="style10">
+shopping by phone: 8882315525
+</td>
+</tr>
+<tr>
+<td colspan="3" class="style28">
+<img src="images/bikes.jpg" style="height: 69px; width: 108px"
+/>
+<img src="images/books.jpg" style="height: 69px; margin-top:
+ 
+0px; width: 59px;" />
+
+/>
+
+69px; width: 114px" /> 125px" />
+102px" />
+
+/>
+
+153px" />
+
+/>
+ 
+
+<img src="images/cars.jpg" style="height: 69px; width: 130px"
+
+<img src="images/electronic appleance.jpg" style="height:
+
+<img src="images/fashion.jpg" style="height: 69px; width:
+
+<img src="images/furniture.jpg" style="height: 69px; width:
+
+<img src="images/pets.jpg" style="height: 69px; width: 138px"
+
+<img src="images/real state.jpg" style="height: 69px; width:
+
+<img src="images/toys.jpg" style="height: 68px; width: 117px"
+ 
+</td>
+</tr>
+<tr>
+<td class="style11">
+copyrighy @ 2016 online advertisement management system. All
+ 
+right reserved. Terms
+
+www.ads.com
+ 
+
+&amp; condition | sitemap | privecy policy | site facebook |
+ 
+</td>
+<td colspan="2" class="style23">
+&nbsp;&nbsp;<asp:ImageButton ID="ImageButton4" runat="server" Height="17px" ImageUrl="~/images/facebookimage.jpg"
+Width="37px" OnClick="ImageButton4_Click" Style="margin-
+ 
+top: 0px" />
+ 
+
+&nbsp;
+<asp:ImageButton ID="ImageButton5" runat="server"
+ 
+Height="16px" ImageUrl="~/images/googleimage1.jpg"
+Width="33px" OnClick="ImageButton5_Click" /> &nbsp;
+<asp:ImageButton ID="ImageButton6" runat="server" Height="16px" ImageUrl="~/images/twitter.jpg"
+Width="37px" OnClick="ImageButton6_Click" /> &nbsp;
+<asp:ImageButton ID="ImageButton7" runat="server" Height="16px" ImageUrl="~/images/youtubeimage.jpg"
+Width="49px" OnClick="ImageButton7_Click" />
+</td>
+</tr>
+</table>
+</div>
+</div>
+</form>
+</body>
+</html>
+ 
